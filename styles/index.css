@@ -3,6 +3,15 @@
   font-family: roboto;
 }
 
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  background-color: black;
+}
+
 ion-icon {
   font-size: 22px;
   cursor: pointer;
@@ -16,6 +25,7 @@ ion-icon {
   width: 100%;
   background-color: white;
   border-bottom: 1px solid #DBDBDB;
+  z-index: 1;
 }
 
 header {
@@ -62,12 +72,7 @@ header {
  column-gap: 20px;
 }
 
-.container-conteudo {
-  display: flex;
-  justify-content: center;
-}
-
-.conteudo {
+.base {
   display: flex;
   justify-content: space-between;
   width: 975px;
@@ -75,18 +80,58 @@ header {
   padding: 88px 20px;
 }
 
-.navegacao {
-  background-color: bisque;
+.content {
+  background-color: aqua;
   height: 100vh;
   width: 614px;
 }
 
-.stories {
+section {
+  background-color:white;
+  position: relative;
+  display: flex;
+  column-gap: 14px;
+  width: 614px;
+  height: 118px;
+  border-radius: 3px;
+  padding: 18px;
+  border: 1px solid #DBDBDB;
+  overflow: hidden;
+}
 
+section ion-icon {
+  position: absolute;
+  top: 43px;
+  right: 8px;
+  font-size: 32px;
+  color: white;
+  filter: drop-shadow(0 4px 4px #00000040);
+}
+
+.stories {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 66px;
+}
+
+.stories p {
+  font-size: 12px;
+  padding-top: 4px;
+  min-height: 17px;
+  max-width: 78px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.story {
+  position: absolute;
+  top: 5px;
+  left: 5px;
 }
 
 .posts {
-
 }
 
 .container-sugestoes {
@@ -106,7 +151,7 @@ header {
 
 @media (max-width: 935px) {
 
-  .conteudo {
+  .base {
     justify-content: center;
   }
 
