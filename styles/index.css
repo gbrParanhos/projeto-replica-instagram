@@ -3,13 +3,10 @@
   font-family: roboto;
 }
 
-.main {
+.base {
   display: flex;
   justify-content: center;
-}
-
-body {
-  background-color: black;
+  background-color: #FAFAFA;
 }
 
 ion-icon {
@@ -17,7 +14,7 @@ ion-icon {
   cursor: pointer;
 }
 
-.container-header {
+header {
   display: flex;
   justify-content: center;
   position: fixed;
@@ -28,51 +25,46 @@ ion-icon {
   z-index: 1;
 }
 
-header {
+.header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 975px;
   height: 54px;
   padding: 0 20px;
+  .header-title {
+    display: flex;
+    align-items: center;
+    ion-icon {
+      margin-right: 10px;
+    }
+    img {
+      width: 113px;
+      padding-left: 10px;
+      border-left: 1px solid #DBDBDB;
+    }
+  }
+  .header-search {
+    height: 28px;
+    min-width: 215px;
+    margin: 0 20px;
+    font-size: 12px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #979797;
+    background-color: #FAFAFA;
+    border: 1px solid #DBDBDB;
+    cursor: text;
+  }
+  .header-buttons {
+    display: flex;
+    column-gap: 20px;
+  }
 }
 
-.titulo {
-  display: flex;
-  align-items: center;
-}
-
-.titulo ion-icon {
-  margin-right: 10px;
-}
-
-.titulo img {
-  width: 113px;
-  padding-left: 10px;
-  border-left: 1px solid #DBDBDB;
-}
-
-.pesquisa {
-  height: 28px;
-  min-width: 215px;
-  margin: 0 20px;
-  font-size: 12px;
-  border-radius: 3px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #979797;
-  background-color: #FAFAFA;
-  border: 1px solid #DBDBDB;
-  cursor: text;
-}
-
-.botoes {
- display: flex;
- column-gap: 20px;
-}
-
-.base {
+.content {
   display: flex;
   justify-content: space-between;
   width: 975px;
@@ -80,9 +72,10 @@ header {
   padding: 88px 20px;
 }
 
-.content {
-  background-color: aqua;
-  height: 100vh;
+main {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
   width: 614px;
 }
 
@@ -91,50 +84,99 @@ section {
   position: relative;
   display: flex;
   column-gap: 14px;
-  width: 614px;
   height: 118px;
   border-radius: 3px;
   padding: 18px;
   border: 1px solid #DBDBDB;
   overflow: hidden;
+  ion-icon {
+    position: absolute;
+    top: 43px;
+    right: 8px;
+    font-size: 32px;
+    color: white;
+    filter: drop-shadow(0 4px 4px #00000040);
+  }
 }
 
-section ion-icon {
-  position: absolute;
-  top: 43px;
-  right: 8px;
-  font-size: 32px;
-  color: white;
-  filter: drop-shadow(0 4px 4px #00000040);
-}
-
-.stories {
+.story {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 66px;
+  p {
+    font-size: 12px;
+    padding-top: 4px;
+    min-height: 17px;
+    max-width: 78px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #262626;
+    font-weight: 400;
+  }
+  .story-img {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
 }
 
-.stories p {
-  font-size: 12px;
-  padding-top: 4px;
-  min-height: 17px;
-  max-width: 78px;
-  overflow: hidden;
-  text-overflow: ellipsis;
+article {
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
 }
 
-.story {
-  position: absolute;
-  top: 5px;
-  left: 5px;
+.post {
+  padding: 15px;
+  background-color: white;
+  border: 1px solid #DBDBDB;
+  border-radius: 3px;
+  p {
+    font-size: 14px;
+    font-weight: 300;
+  }
+  span {
+    font-weight: 500;
+  }
+  .post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    .post-account {
+      display: flex;
+      align-items: center;
+      column-gap: 15px;
+    }
+  }
+  .post-content {
+    display: flex;
+    justify-content: center;
+  }
+  .post-footer {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    row-gap: 10px;
+    .post-functions {
+      display: flex;
+      justify-content: space-between;
+      .post-interactions {
+        display: flex;
+        column-gap: 15px;
+      }
+    }
+    .post-likes {
+      display: flex;
+      align-items: center;
+      column-gap: 5px;
+    }
+  }
 }
 
-.posts {
-}
-
-.container-sugestoes {
+aside {
   margin-left: 10px;
   height: 100vh;
   width: 293px;
@@ -144,6 +186,7 @@ section ion-icon {
 
 .sugestoes {
   position: fixed;
+  padding-top: 23px;
   height: 500px;
   width: 293px;
   background-color: #333;
@@ -151,11 +194,11 @@ section ion-icon {
 
 @media (max-width: 935px) {
 
-  .base {
+  .content {
     justify-content: center;
   }
 
-  .container-sugestoes {
+  aside {
     display: none;
   }
 

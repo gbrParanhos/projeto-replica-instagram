@@ -11,91 +11,170 @@
   <title>Instagram</title>
 </head>
 <body>
-  <div class="main">
-    <div class="container-header">
-      <header>
-        <div class="titulo">
+  <div class="base">
+    <header>
+      <div class="header-content">
+        <div class="header-title">
           <ion-icon name="logo-instagram"></ion-icon>
           <img width="103px" src="imgs/logo.png" alt="Instagram" />
         </div>
 
-        <div class="pesquisa">
+        <div class="header-search">
           <p>Pesquisar</p>
         </div>
 
-        <div class="botoes">
+        <div class="header-buttons">
           <ion-icon name="paper-plane-outline"></ion-icon>
           <ion-icon name="compass-outline"></ion-icon>
           <ion-icon name="heart-outline"></ion-icon>
           <ion-icon name="person-outline"></ion-icon>
         </div>
-      </header>
-    </div>
+      </div>
+    </header>
 
-    <div class="base">
-      <div class="content">
+    <div class="content">
+      <main>
         <section>
-          <div class="stories">
+          <div class="story">
             <img width="66px" class="story-circle" src="imgs/story-circle.svg" alt="story-circle" />
-            <img width="56px" class="story" src="imgs/9gag.svg" alt="9gag" />
+            <img width="56px" class="story-img" src="imgs/9gag.svg" alt="9gag" />
             <p>9gag</p>
           </div>
-          <div class="stories">
+          <div class="story">
             <img width="66px" class="story-circle" src="imgs/story-circle.svg" alt="story-circle" />
-            <img width="56px" class="story" src="imgs/meowed.svg" alt="meowed" />
+            <img width="56px" class="story-img" src="imgs/meowed.svg" alt="meowed" />
             <p>meowed</p>
           </div>
-          <div class="stories">
+          <div class="story">
             <img width="66px" class="story-circle" src="imgs/story-circle.svg" alt="story-circle" />
-            <img width="56px" class="story" src="imgs/barked.svg" alt="barked" />
+            <img width="56px" class="story-img" src="imgs/barked.svg" alt="barked" />
             <p>barked</p>
           </div>
-          <div class="stories">
+          <div class="story">
             <img width="66px" class="story-circle" src="imgs/story-circle.svg" alt="story-circle" />
-            <img width="56px" class="story" src="imgs/nathanwpylestrangeplanet.svg" alt="nathanwpylestrangeplanet" />
+            <img width="56px" class="story-img" src="imgs/nathanwpylestrangeplanet.svg" alt="nathanwpylestrangeplanet" />
             <p>nathanwpylestrangeplanet</p>
           </div>
-          <div class="stories">
+          <div class="story">
             <img width="66px" class="story-circle" src="imgs/story-circle.svg" alt="story-circle" />
-            <img width="56px" class="story" src="imgs/wawawicomics.svg" alt="wawawicomics" />
+            <img width="56px" class="story-img" src="imgs/wawawicomics.svg" alt="wawawicomics" />
             <p>wawawicomics</p>
           </div>
-          <div class="stories">
+          <div class="story">
             <img width="66px" class="story-circle" src="imgs/story-circle.svg" alt="story-circle" />
-            <img width="56px" class="story" src="imgs/respondeai.svg" alt="respondeai" />
+            <img width="56px" class="story-img" src="imgs/respondeai.svg" alt="respondeai" />
             <p>respondeai</p>
           </div>
-          <div class="stories">
+          <div class="story">
             <img width="66px" class="story-circle" src="imgs/story-circle.svg" alt="story-circle" />
-            <img width="56px" class="story" src="imgs/filomoderna.svg" alt="filomoderna" />
+            <img width="56px" class="story-img" src="imgs/filomoderna.svg" alt="filomoderna" />
             <p>filomoderna</p>
           </div>
-          <div class="stories">
+          <div class="story">
             <img width="66px" class="story-circle" src="imgs/story-circle.svg" alt="story-circle" />
-            <img width="56px" class="story" src="imgs/memeriagourmet.svg" alt="memeriagourmet" />
+            <img width="56px" class="story-img" src="imgs/memeriagourmet.svg" alt="memeriagourmet" />
             <p>memeriagourmet</p>
           </div>
           <ion-icon name="chevron-forward-circle"></ion-icon>
         </section>
         <article>
-          <div class="posts">
-            <img width="56px" src="imgs/meowed.svg" alt="meowed" />
-            <p>meowed</p>
-            <ion-icon name="ellipsis-horizontal"></ion-icon>
-            <img width="56px" src="imgs/gato-telefone.svg" alt="" />
-            <ion-icon name="heart-outline"></ion-icon>
-            <ion-icon name="chatbubble-outline"></ion-icon>
-            <ion-icon name="paper-plane-outline"></ion-icon>
-            <ion-icon name="bookmark-outline"></ion-icon>
-            <img width="56px" src="imgs/respondeai.svg" alt="respondeai" />
-            <p>Curtido por respondeai e outras 101.523 pessoas</p>
+          <div class="post">
+            <div class="post-header">
+              <div class="post-account">
+                <img width="32px" src="imgs/meowed.svg" alt="meowed" />
+                <span>meowed</span>
+              </div>
+              <div class="post-options">
+                <ion-icon name="ellipsis-horizontal"></ion-icon>
+              </div>
+            </div>
+            <div class="post-content">
+              <img width="612px" src="imgs/gato-telefone.svg" alt="gato-telefone" />
+            </div>
+            <div class="post-footer">
+              <div class="post-functions">
+                <div class="post-interactions">
+                  <ion-icon name="heart-outline"></ion-icon>
+                  <ion-icon name="chatbubble-outline"></ion-icon>
+                  <ion-icon name="paper-plane-outline"></ion-icon>
+                </div>
+                <div class="post-save">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+              </div>
+              <div class="post-likes">
+                <img width="20px" src="imgs/respondeai.svg" alt="respondeai" />
+                <p>Curtido por <span>respondeai</span> e <span>outras 101.523 pessoas</span></p>
+              </div>
+            </div>
           </div>
+          <div class="post">
+            <div class="post-header">
+              <div class="post-account">
+                <img width="32px" src="imgs/barked.svg" alt="barked" />
+                <span>barked</span>
+              </div>
+              <div class="post-options">
+                <ion-icon name="ellipsis-horizontal"></ion-icon>
+              </div>
+            </div>
+            <div class="post-content">
+              <img width="612px" src="imgs/dog.svg" alt="dog" />
+            </div>
+            <div class="post-footer">
+              <div class="post-functions">
+                <div class="post-interactions">
+                  <ion-icon name="heart-outline"></ion-icon>
+                  <ion-icon name="chatbubble-outline"></ion-icon>
+                  <ion-icon name="paper-plane-outline"></ion-icon>
+                </div>
+                <div class="post-save">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+              </div>
+              <div class="post-likes">
+                <img width="20px" src="imgs/adorable_animals.svg" alt="adorable_animals" />
+                <p>Curtido por <span>adorable_animals</span> e <span>outras 99.159 pessoas</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="post">
+            <div class="post-header">
+              <div class="post-account">
+                <img width="32px" src="imgs/meowed.svg" alt="meowed" />
+                <span>meowed</span>
+              </div>
+              <div class="post-options">
+                <ion-icon name="ellipsis-horizontal"></ion-icon>
+              </div>
+            </div>
+            <div class="post-content">
+              <img width="612px" src="imgs/gato-telefone.svg" alt="gato-telefone" />
+            </div>
+            <div class="post-footer">
+              <div class="post-functions">
+                <div class="post-interactions">
+                  <ion-icon name="heart-outline"></ion-icon>
+                  <ion-icon name="chatbubble-outline"></ion-icon>
+                  <ion-icon name="paper-plane-outline"></ion-icon>
+                </div>
+                <div class="post-save">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+              </div>
+              <div class="post-likes">
+                <img width="20px" src="imgs/respondeai.svg" alt="respondeai" />
+                <p>Curtido por <span>respondeai</span> e <span>outras 101.523 pessoas</span></p>
+              </div>
+            </div>
+          </div>
+          
         </article>
-      </div>
+      </main>
 
-      <div class="container-sugestoes">
-        <aside class="sugestoes"></aside>
-      </div>
+      <aside>
+        <div class="sugestoes"></div>
+      </aside>
     </div>
   </div>
 
