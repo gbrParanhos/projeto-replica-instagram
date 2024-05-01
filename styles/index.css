@@ -72,7 +72,6 @@ header {
   display: flex;
   justify-content: space-between;
   width: 975px;
-  /* background-color: #979797; */
   padding: 88px 20px;
 }
 
@@ -239,6 +238,10 @@ aside {
   }
 }
 
+footer {
+  display: none;
+}
+
 @media (max-width: 935px) {
 
   .content {
@@ -252,5 +255,78 @@ aside {
 }
 
 @media (max-width: 614px) {
+
+  .content {
+    padding: 80px 0;
+  }
+
+  .header-content {
+    width: 100%;
+    .header-title {
+      img {
+        position: fixed;
+        left: calc(50% - 51.5px);
+        border: none;
+        width: 103px;
+        padding: 0px;
+      }
+    }
+    .header-search {
+      display: none;
+    }
+    .header-buttons {
+      .hidden-mobile {
+        display: none;
+      }
+    }
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  section {
+    background-color: transparent;
+    border: none;
+    padding: 0px 18px;
+    height: 82px;
+    ion-icon {
+      display: none;
+    }
+  }
+
+  .post {
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+  }
+
+  .post-content img {
+    width: calc(100% + 30px);
+  }
+  
+  footer {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    border-top: 1px solid #DBDBDB;
+    z-index: 1;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 975px;
+    height: 54px;
+    padding: 0 20px;
+  }
 
 }
